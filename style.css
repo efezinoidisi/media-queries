@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding: 2em 0;
+}
+
+#wrapper {
+    width: 100%;
+    height: 70vh;
+    padding: 5vh;
+}
+
+main {
+    width: 90%;
+    height: 60vh;
+    margin: auto;
+    padding: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url('images/bg-intro-desktop.png');
+
+
+}
+
+.first-box {
+    width: 90%;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 1.2em 1em 1.2em 2em;
+}
+
+.first-box h2 {
+    font-weight: 700;
+    font-size: 2em;
+    padding: 5px;
+    margin: 0.5em 0;
+}
+
+.first-box p {
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 20px;
+}
+
+.second-box {
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.top {
+    width: 100%;
+    height: 10%;
+    margin-bottom: 1em;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(248, 32%, 49%);
+    color: hsl(246, 25%, 77%);
+    padding: 15px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.top span {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.bottom {
+    width: 100%;
+    background-color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    color: hsl(249, 10%, 26%);
+}
+
+.bottom form {
+    padding: 2em 2em 0.5em;
+
+}
+
+form input {
+    width: 100%;
+    padding: 0.7em;
+    margin: 10px 0;
+    border: 0.5px solid rgb(230, 213, 213);
+    font-size: 1em;
+    font-weight: 400;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.bottom p {
+    text-align: center;
+    font-size: 0.5em;
+    color: hsl(246, 25%, 77%);
+    margin-bottom: 20px;
+
+}
+
+.bottom a {
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+}
+
+form button {
+    width: 100%;
+    margin: 10px 0 0;
+    padding: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(154, 59%, 51%);
+    color: #fff;
+    font-size: 1.1em;
+}
+
+@media screen and (max-width:1000px) and (min-width:600px) {
+
+    #wrapper {
+        width: 100%;
+        padding: 8vh 1.5vh;
+    }
+
+    main {
+        width: 90%;
+        height: max-content;
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    body {
+        padding: 0;
+        width: 100%;
+    }
+
+    #wrapper {
+        padding: 0;
+    }
+
+    main {
+        display: block;
+        width: 100%;
+        margin: 0;
+        height: 950px;
+        padding: 8px 5px;
+        background-image: url('images/bg-intro-mobile.png');
+    }
+
+    .first-box {
+        padding: 5px;
+        margin: 50px 0;
+    }
+
+    .first-box h2 {
+        font-size: 1.5em;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .first-box p {
+        font-size: 0.9em;
+        line-height: 22px;
+        text-align: start;
+        text-align: center;
+    }
+
+    .second-box {
+        display: block;
+        margin: 10px 0;
+        padding: 8px;
+        justify-content: center;
+    }
+
+    .top {
+        width: 100%;
+        height: 80px;
+        padding: 20px;
+        font-size: 1em;
+        margin-bottom: 25px;
+    }
+
+
+    .bottom {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: max-content;
+    }
+
+    .bottom button {
+        font-size: 1em;
+    }
+
+    .bottom p {
+        padding: 0 60px;
+    }
