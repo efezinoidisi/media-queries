@@ -149,10 +149,6 @@ form button {
 
 @media screen and (min-width:900px) {
 
-    #wrapper {
-        padding: 50px;
-    }
-
     main {
         background-image: url('images/bg-intro-desktop.png');
         flex-direction: row;
