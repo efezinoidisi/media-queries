@@ -109,6 +109,10 @@ form button {
     color: #fff;
 }
 
+form button:hover {
+    opacity: 80%;
+}
+
 .bottom p {
     text-align: center;
     padding: 0 40px;
@@ -159,7 +163,7 @@ form button {
     }
 
     h2 {
-        font-size: 3.3rem;
+        font-size: 3rem;
         line-height: 1.1;
         text-align: left;
         padding: 0;
@@ -168,5 +172,9 @@ form button {
     .first-box p {
         text-align: left;
         font-size: 1.1rem;
+    }
+
+    .top {
+        padding: 20px 30px;
     }
 }
